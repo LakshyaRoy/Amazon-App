@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign in Page</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Nunito:wght@300;400;500;600&family=Poppins:wght@200;300;400&family=Raleway:wght@200&family=Ubuntu&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Nunito", sans-serif;
+            /* color: white; */
+
+        }
+
+        body,
+        html {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .wrapper {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            /* overflow-x: hidden; */
+        }
+
+        .logo {
+            width: 140px;
+            height: 30px;
+        }
+
+        .logo img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .form {
+            height: 350px;
+            width: 350px;
+            background-color: white;
+            border: 1px solid lavender;
+            padding: 1;
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+        }
+
+        .continue {
+            background-color: #ffff17;
+            border-radius: 14px;
+            font-size: 14px;
+            font-weight: 500;
+            color: black;
+            padding: 4px 10px;
+            cursor: pointer;
+        }
+
+
+        .form h2 {
+            font-size: 25px;
+        }
+
+        .form h5 {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .form p {
+            font-size: 12px;
+            font-weight: 500;
+            margin-top: 5px;
+
+        }
+
+        .form p span {
+            color: #07a9ec;
+            font-weight: 500;
+            cursor: pointer;
+
+        }
+
+        .form input {
+            width: 100%;
+            height: 30px;
+        }
+
+        .form .second {
+            color: #07a9ec;
+            cursor: pointer;
+        }
+
+        .lowerHead {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            border-top: 1px solid lavender;
+            margin-top: 4px;
+        }
+
+        .fSpan {
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .sSpan {
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            color: #07a9ec;
+        }
+
+        .submitButton {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 11px;
+            margin-bottom: 14px;
+        }
+
+        .submitButton button {
+            padding: 2px 60px;
+            background: white;
+            border: 2px solid lavender;
+            cursor: pointer;
+            font-weight: 600;
+
+        }
+
+        .submitButton span{
+            font-size: 14px;
+            font-weight: 1000;
+        }
+        .lastFooter {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+
+        }
+
+        .lastFooter .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 12px;
+            color: #07a9ec;
+            gap: 49px;
+            cursor: pointer;
+        }
+        .foot{
+            margin-top: 10px;
+            font-size: 10px;
+        }
+    </style>
+    <link rel="shortcut icon"
+        href="https://static.vecteezy.com/system/resources/previews/019/766/240/original/amazon-logo-amazon-icon-transparent-free-png.png"
+        type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Amazon.com-Logo.svg/1024px-Amazon.com-Logo.svg.png"
+                alt="">
+        </div>
+        <div class="form">
+
+            <h2>Sign in</h2>
+            <h5>Email or Mobile Phone Number</h5>
+            <input type="text" placeholder="">
+            <button class="continue">Continue</button>
+
+
+            <p>By continuing, you agree to Amazon's <span>Condition of use </span>and <span>Privacy Notice.</span></p>
+
+            <p class="second"><i class="ri-arrow-right-s-fill"></i> Need Help ?</p>
+            <div class="lowerHead">
+                <span class="fSpan">Buying For Work ?</span>
+                <span class="sSpan">Shop on Amazon</span>
+            </div>
+        </div>
+        <div class="submitButton">
+            <span>New to Amazon ?</span>
+          <a href="signup.html"> <button> Create Your Amazon Account</button></a> 
+        </div>
+        <div class="lastFooter">
+            <div class="menu">
+                <p>Condition of use</p>
+                <p>Privacy Notice</p>
+                <p>Help</p>
+            </div>
+            <p class="foot">© 1996-2023, Amazon.com, Inc. or its affiliates </p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
