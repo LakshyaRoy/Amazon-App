@@ -1,5 +1,10 @@
 //    this logic is for slider----------------------------------
 let flag = 0;
+
+setInterval(() => {
+  slideShow(flag);
+  flag++;
+}, 3000);
 function slideShow(number) {
   let slides = document.querySelectorAll(".slide");
 
