@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script>
+      let container = document.querySelector(".container");
+
+      async function detailsData() {
+        let params = new URL(document.location).searchParams;
+        let id = params.get("id");
+        const response = await fetch(`https://dummyjson.com/products/${id}`);
+        const data = await response.json();
+        console.log(data);
+
+        let imagesHtml = "";
+
+        for (let i = 0; i < 5; i++) {
+          imagesHtml += `<img src="${data.images[i]}" alt="${data.title}" width="200px" height="200px">`;
+        }
+
+        container.innerHTML = `
+          <div>
+            ${imagesHtml}
+            <p>${data.title}</p>
+            <p>${data.description}</p>
+          </div>
+        `;
+      }
+
+      detailsData();
+    </script>
+  </body>
+</html>
